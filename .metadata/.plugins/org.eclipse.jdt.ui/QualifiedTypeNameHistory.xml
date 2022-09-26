@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="lejos.hardware.sensor.EV3UltrasonicSensor"/>
+    <fullyQualifiedTypeName name="lejos.hardware.ev3.LocalEV3"/>
+    <fullyQualifiedTypeName name="lejos.hardware.Button"/>
+    <fullyQualifiedTypeName name="lejos.hardware.lcd.LCD"/>
+    <fullyQualifiedTypeName name="lejos.utility.Delay"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+</qualifiedTypeNameHistroy>

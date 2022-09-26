@@ -18,35 +18,54 @@ import java.util.*;
 
 public class Ultrason {
 	
-	EV3UltrasonicSensor sensor;
+	private EV3UltrasonicSensor sensor;
 	
-	float[] angleData; 
+	/**
+	 * 1 data point per angle of rotation. To be used during a 360 search.
+	 */
+	private float[] angleData; 
+	
+	/**
+	 * The distance at which is no longer a palet.
+	 */
+	public final static float PALET_DISTANCE = (float) 0.3;
+	
+	/**
+	 * The frequency of the sampling.
+	 */
+	private final static int frequency = 1;
 	
 	
-	final static float PALET_DISTANCE = (float) 0.3;
+	/**
+	 * Visual memory.
+	 */
+	private float[] memory;
 	
-	
-	// test
-	float[] memory;
-	int memoryIdx = 0;
+	int idx = 0;
 	
 	
 	public Ultrason() throws IOException {
 		sensor = new EV3UltrasonicSensor(SensorPort.S2);
+		/*
+		angleData = new ArrayList<Float>();
+		angleData.ensureCapacity(360);
+		memory = new ArrayList<Float>();
+		memory.ensureCapacity(10);
+		*/
 		
+		
+		memory = new float[10]; // Size of the memory + buffer
 		angleData = new float[360];
-		memory = new float[10];
 	}
 	
-	private void decale(float[] tab) {
-		
-	}
+	
+	
 	
 	/**
 	 * Takes a sample and adds it to the memory array.
 	 */
 	public void takeSample() {
-		sensor.fetchSample(memory, 0);
+		if(idx < )
 	}
 
 	public static void main(String[] args) throws IOException {
