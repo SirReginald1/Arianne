@@ -65,7 +65,7 @@ public class Ultrason {
 	 * Takes a sample and adds it to the memory array.
 	 */
 	public void takeSample() {
-		if(idx < )
+		//if(idx < )
 	}
 
 	public static void main(String[] args) throws IOException {
