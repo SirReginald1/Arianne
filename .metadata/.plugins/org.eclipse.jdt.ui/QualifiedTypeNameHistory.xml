@@ -6,4 +6,11 @@
     <fullyQualifiedTypeName name="lejos.hardware.lcd.LCD"/>
     <fullyQualifiedTypeName name="lejos.utility.Delay"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+    <fullyQualifiedTypeName name="lejos.hardware.sensor.EV3TouchSensor"/>
+    <fullyQualifiedTypeName name="lejos.robotics.SampleProvider"/>
+    <fullyQualifiedTypeName name="lejos.hardware.Battery"/>
+    <fullyQualifiedTypeName name="java.util.TimerTask"/>
+    <fullyQualifiedTypeName name="lejos.ev3.tools.ConsoleViewComms"/>
 </qualifiedTypeNameHistroy>
