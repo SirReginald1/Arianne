@@ -23,6 +23,31 @@ public class Infrarouge {
 	 *  The bottom margin for one object being next to an other.
 	 */
 	public final static int NEXT_TO_LOWER_TOLLERENCE = 2;
+	/**
+	 * Y axis position of yellow line.
+	 */
+	public final static int LINE_Y_YELLOW = 10;
+	/**
+	 * Y axis position of black line.
+	 */
+	public final static int LINE_Y_BLACK = 50;
+	/**
+	 * Y axis position of red line.
+	 */
+	public final static int LINE_Y_RED = 100;
+	/**
+	 * X axis position of green line.
+	 */
+	public final static int LINE_X_GREEN = 10;
+	/**
+	 * X axis position of black line.
+	 */
+	public final static int LINE_X_BLACK = 50;
+	/**
+	 * X axis position of blue line.
+	 */
+	public final static int LINE_X_BLUE = 100;
+	
 	
 	private static Objet[] allObjet = new Objet[11];
 	
@@ -89,21 +114,55 @@ public class Infrarouge {
 	}
 	*/
 	
+	/**
+	 * Returns the Object whose x coordinate is the closest to the specified x value.
+	 * @param x Value of the x coordinate with which other object coordinates will be compared.
+	 * @return
+	 */
+	public static Objet findClosestXPos(int x) {
+		int smalest = Math.abs(allObjet[0].getX() - x);
+		int idx = 0;
+		for(int i=1;i<allObjet.length;i++)
+			if(Math.abs(allObjet[i].getX() - x) < smalest) {
+				smalest = Math.abs(allObjet[i].getX() - x);
+				idx = i;
+			}
+				
+		
+		return allObjet[idx];
+
+	}
+
+	public static boolean findClosestYPos(int y) {
+		int smalest = Math.abs(allObjet[0].getX() - y);
+		int idx = 0;
+		for(int i=1;i<allObjet.length;i++)
+			if(Math.abs(allObjet[i].getX() - y) < smalest)
+			 {
+				smalest = Math.abs(allObjet[i].getX() - y);
+				idx = i;
+			}
 	
+		
+		return allObjet[idx];
+
+	}
+
+
 	public boolean findMe() {
 		return false;
 	}
-	
-	
-	
+
+
+
 	public void placeCoordinatesInTab() {
-		
+
 	}
-	
-	
+
+
 	public static void main(String[] args) {
-		
-		
+
+
 
 	}
 
